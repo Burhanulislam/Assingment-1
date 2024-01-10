@@ -1,0 +1,308 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap'); /* Merriweather */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* Common Class */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+ol,ul {
+    list-style-type: none;
+}
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Banner part Start */
+#banner {
+    padding-top: 50px;
+}
+.banner {
+    background-image: url('../images/Banner\ Image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 177px 0px;
+    text-align: center;
+    border-radius: 16px;
+    position: relative;
+    z-index: 1;
+}
+.banner::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%);
+    z-index: -1;
+}
+.banner h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+}
+.banner h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 72px;
+    font-weight: 900;
+    color: #fff;
+    padding: 0px 167px;
+}
+
+/* Category Part */
+#category {
+padding: 120px 0px
+}
+.category_main {
+    text-align: center;
+}
+.category_main h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 88px;
+    font-weight: 700;
+    color: #f00;
+    padding-bottom: 48px;
+}
+.category_main p {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #f00;
+    padding-bottom: 16px;
+}
+.category_main h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #070211;
+    padding-bottom: 48px;
+}
+
+/* Midnight Part Start */
+#midnight {
+    padding: 0px 0px 120px 0px;
+}
+.midnight_main {
+    background-image: url('../images/Vectorrr.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 75px 0px;
+    border-radius: 16px;
+    position: relative;
+    z-index: 1;
+}
+.midnight_main::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%);
+    border-radius: 16px;
+    z-index: -1;
+}
+.left_part {
+    width: 50%;
+    padding-left: 70px;
+}
+.left_part h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 64px;
+    font-weight: 900;
+    color: #fff;
+}
+.left_part p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.80);
+}
+.left_part button {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 18px 35px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+.right_part {
+    width: 50%;
+    text-align: center;
+}
+
+/* Address Part Start */
+.address_main{
+    text-align: center;
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+    padding: 100px 0px;
+}
+.address_main h4 {
+    font-family: 'Inter', sans-serif;
+    color: #070211;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 56px;
+    text-transform: capitalize;
+}
+.address_main h4 span {
+    color: #f00;
+}
+.address_main button {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #f00;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 32px;
+    margin-top: 48px
+}
+
+
+/* Portfolio Part Start */
+#portfolio {
+    padding-top: 120px;
+}
+.portHeader  h5{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #F00;
+}
+.portHeader h4 {
+    font-family: 'Merriweather', serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: #070211;
+    text-transform: capitalize;
+    padding: 16px 0px 22px 0px;
+}
+.portHeader p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: rgba(7, 2, 17, 0.60);
+    padding-right: 387px;
+    margin-bottom: 48px;
+}
+.port_item {
+    width: 32%;
+    margin-bottom: 24px;
+}
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Subscribe part start */
+#subscribe {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.subscribe_main {
+    padding: 80px 0px;
+    border-radius: 16px;
+    background: rgba(255, 0, 0, 0.05);
+    text-align: center;
+}
+.subscribe_main h4 {
+    font-family: 'Merriweather', serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: #070211;
+    text-transform: capitalize;
+    padding: 40px 0px 16px 0px;
+}
+.subscribe_main p {
+    font-family: 'Inter', sans-serif;
+    color: #070211;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: rgba(7, 2, 17, 0.60);
+    padding: 0px 200px
+}
+.subscribe_main input {
+    padding: 31px 280px 25px 35px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: none;
+    outline: none;
+}
+.subscribe_main button {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFF;
+    padding: 24px 56px;
+    border: none;
+    background: #F00;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 48px;
+}
+/* Subscribe part end */
+
+
+/* Footer part start */
+    #footer {
+        padding: 120px 0px;
+        background-color: #070211;
+    }
+    .top_footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .padding-top {
+        padding-top: 50px;
+    }
+    .padding_bottm {
+        padding-bottom: 50px;
+    }
+    .footer_top h5 {
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 40px;
+    }
+    .footer_middle {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 48px 0px;
+    }
+    /* Fotter part end */
+
+
+
+    /* ===== Md Burhanul Islam ===== */
+
+    /* ===== Batch-09 ===== */
